@@ -88,8 +88,8 @@ The `recovery-stats` telemetry device regularly calls the [CAT Recovery API]({{s
 
 This telemetry device supports the following parameters:
 
-- `searchable-snapshots-stats-indices` A string with the index pattern, or list of index patterns, that searchable snapshots stats should additionally be collected from. If unset, only cluster-level stats will be collected. Default is `None`.
-- `searchable-snapshots-stats-sample-interval`: A positive number greater than zero denoting the sampling interval in seconds. Default is `1`.
+- `recovery-stats-indices`: A string with the index pattern or a JSON object keyed by cluster name when using `--target-hosts`, specifying the indices to collect recovery stats from. If unset, stats are collected for all indices. Default is `None`.
+- `recovery-stats-sample-interval`: A positive number greater than zero denoting the sampling interval in seconds. Default is `1`.
 
 <!-- vale off -->
 ## shard-stats
