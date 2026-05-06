@@ -88,8 +88,10 @@ The `recovery-stats` telemetry device regularly calls the [CAT Recovery API]({{s
 
 This telemetry device supports the following parameters:
 
-- `recovery-stats-indices`: A string with the index pattern or a JSON object keyed by cluster name when using `--target-hosts`, specifying the indices to collect recovery stats from. If unset, stats are collected for all indices. Default is `None`.
-- `recovery-stats-sample-interval`: A positive number greater than zero denoting the sampling interval in seconds. Default is `1`.
+| Parameter | Data type | Description |
+| :--- | :--- | :--- |
+| `recovery-stats-indices` | String or JSON object | Specifies the indexes from which to collect recovery statistics. Valid values are:<br>- A string that specifies an index pattern. <br>- A JSON object that maps cluster names to index patterns when `--target-hosts` is used to define multiple clusters. <br><br>If not set, recovery statistics are collected for all indexes. Default is `None`. |
+| `recovery-stats-sample-interval` | Number | A positive number denoting the sampling interval, in seconds. Default is `1`. |
 
 <!-- vale off -->
 ## shard-stats
