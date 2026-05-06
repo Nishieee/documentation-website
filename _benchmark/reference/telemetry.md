@@ -86,7 +86,7 @@ The `node-stats` device supports the following parameters:
 
 The `recovery-stats` telemetry device regularly calls the [CAT Recovery API]({{site.url}}{{site.baseurl}}/api-reference/cat/cat-recovery/) and records one metrics document per shard.
 
-This telemetry device supports the following parameters:
+The `recovery-stats` telemetry device supports the following parameters.
 
 | Parameter | Data type | Description |
 | :--- | :--- | :--- |
